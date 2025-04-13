@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Titi</title>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <!-- Carga del modelo -->
+        <a-asset-item id="titi" src="titi.glb"></a-asset-item>
+      </a-assets>
+
+      <!-- Mostrar el modelo -->
+      <a-gltf-model src="#titi" position="0 0 -2" scale="1 1 1" rotation="0 180 0"></a-gltf-model>
+
+      <!-- Extras -->
+      <a-entity camera position="0 1.6 0"></a-entity>
+      <a-light type="ambient" color="#ffffff"></a-light>
+      <a-light type="directional" position="2 4 2" intensity="0.5"></a-light>
+
+      <!-- Piso -->
+      <a-plane rotation="-90 0 0" width="10" height="10" color="#ccc"></a-plane>
+    </a-scene>
+  </body>
+</html>
